@@ -31,8 +31,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: npm build
-        run: npm install && npm run build
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Ruby
@@ -44,6 +42,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: npm build
+        run: npm install && npm run build
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
