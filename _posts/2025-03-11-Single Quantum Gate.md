@@ -1,5 +1,5 @@
 ---
-title: FFT의 알고리즘적 이해 
+title: Single Quantum Gate
 author: CookieBean
 date: 2025-03-11 15:33:00 +0800
 categories: [Blogging, QuantumComputing]
@@ -126,11 +126,11 @@ $$
 
 $$
 \begin{equation}
-  \braket{G\psi \vert G\psi} = \braket{\psi \vert G^\dag G \psi} = \braket{\psi \vert G^\dag G \vert \psi} = 1
+  \braket{G\psi \vert G\psi} = \braket{\psi \vert G^\dagger G \psi} = \braket{\psi \vert G^\dagger G \vert \psi} = 1
 \end{equation}
 $$
 
-가 성립한다. 여기서 $G^\dag G$를 $\mathbb{C}^{2^n} \rarr \mathbb{C}^{2^n}$인 선형연산자 $T$로 보면
+가 성립한다. 여기서 $G^\dagger G$를 $\mathbb{C}^{2^n} \rightarrow \mathbb{C}^{2^n}$인 선형연산자 $T$로 보면
 
 $$
 \begin{equation}
@@ -138,7 +138,7 @@ $$
 \end{equation}
 $$
 
-가 성립한다. 이러한 선형연산자는 항등연산자로 유일하기에 $G^\dag G = I = G G^\dag$가 성립한다. 따라서. G는 Unitary Matrix이다.
+가 성립한다. 이러한 선형연산자는 항등연산자로 유일하기에 $G^\dagger G = I = G G^\dagger$가 성립한다. 따라서. G는 Unitary Matrix이다.
 
 </blockquote>
 
@@ -158,7 +158,7 @@ $$
 \end{equation}
 $$
 
-역시 $Z^\dag Z = Z Z^\dag = I$임이 성립함은 쉽게 확인할 수 있다.
+역시 $Z^\dagger Z = Z Z^\dagger = I$임이 성립함은 쉽게 확인할 수 있다.
 
 ## 아다마르 게이트 - $H$
 
@@ -175,4 +175,4 @@ $$
 \end{equation}
 $$
 
-와 같이 생겼는데, $X$ 게이트나 $Z$ 게이트에서는 볼 수 없는 *중첩*이 일어난다는 점이 특징이다. 당연히 $H^\dag H = H H^\dag = I$가 만족됨은 간단한 계산으로 살펴볼 수 있다. 그리고 Linear Algebra에 관심있는 사람이라면 이 $H$ 게이트가 사실상 회전변환과 동일하게 생겼다는점을 이해할 수 있다. 
+와 같이 생겼는데, $X$ 게이트나 $Z$ 게이트에서는 볼 수 없는 *중첩*이 일어난다는 점이 특징이다. 당연히 $H^\dagger H = H H^\dagger = I$가 만족됨은 간단한 계산으로 살펴볼 수 있다. 그리고 Linear Algebra에 관심있는 사람이라면 이 $H$ 게이트가 사실상 회전변환과 동일하게 생겼다는점을 이해할 수 있다. 
