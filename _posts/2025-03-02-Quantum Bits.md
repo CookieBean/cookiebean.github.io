@@ -1,5 +1,5 @@
 ---
-title: Quantum Bits (a.k.a qbits)
+title: 1.2 Quantum Bits (a.k.a qbits)
 description: Quantum Computation and Quantum Information 1.2 
 author: CookieBean
 date: 2025-03-02 15:51:00 +0800
